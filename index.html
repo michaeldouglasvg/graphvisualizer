@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Home page</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="icons/web-font-files/css/icons.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+ <!-- ============= header ============== -->
+ <header class="mainheader">
+  <div class="logo">Logo</div>
+  <div class="navigation">
+   <ul class="links">
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Services</a></li>
+   </ul>
+  </div>
+  <div class="account">
+   <a href="" class="tag">Signin</a>
+   <a href="" class="tag">Signup</a>
+   <div class="toggle">
+    <i class="lni lni-text-align-right"></i>
+   </div>
+  </div>
+ </header>
+
+ <!-- ============== body section =============== -->
+ <section class="bodycontect">
+  <div class="Displaygraph">
+   <div class="Chartheader">
+    <div class="Heading"><h1>Visualizing </h1><p></p></div>
+    <div class="Graphbuttons">
+      <button class="btn bar">Bar Chart</button>
+      <button class="btn line">Line Chart</button>
+     <button class="btn pie">Pie Chart</button>
+    </div>
+   </div>
+
+   <div class="Graphcopies">
+    <canvas id="chartConatiner" class="Graphs"></canvas>
+   </div>
+  </div>
+ </section>
+
+
+ <!-- =========== footer ============= -->
+ <div class="footer">
+  <p>Copyright &copy; 2023 Gtechdeveloper.com || All rights reserved.</p>
+ </div>
+
+
+
+ <!-- Link by internal scripts -->
+ <script src="js/index.js"></script>
+</body>
+</html>

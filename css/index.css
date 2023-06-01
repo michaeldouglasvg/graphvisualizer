@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: whitesmoke;
+  position: relative;
+}
+
+.mainheader {
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainheader .logo {
+  width: 80px;
+  height: 50px;
+  background: white;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  margin-left: 0.6rem;
+}
+.mainheader .navigation {
+  display: none;
+}
+.mainheader .account {
+  display: flex;
+  margin-right: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+}
+.mainheader .account .tag {
+  text-decoration: none;
+  padding: 1rem;
+  background: green;
+  border-radius: 3px;
+  color: white;
+}
+.mainheader .account .toggle {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 3px;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.bodycontect {
+  width: 100%;
+}
+.bodycontect .Displaygraph {
+  width: 99%;
+  padding: 1rem 0.1rem;
+  margin: 0.1rem auto;
+}
+@media only screen and (min-width: 426px) {
+  .bodycontect .Displaygraph {
+    width: 94%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .bodycontect .Displaygraph {
+    width: 80%;
+  }
+}
+.bodycontect .Displaygraph .Chartheader {
+  width: 100%;
+  padding: 1rem 0.1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-gap: 1rem;
+}
+.bodycontect .Displaygraph .Chartheader .Heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.bodycontect .Displaygraph .Chartheader .Heading h1 {
+  font-size: 1.5rem;
+  padding: 0.5rem 0.2rem;
+}
+.bodycontect .Displaygraph .Chartheader .Heading p {
+  font-size: 1.5rem;
+  padding: 0.5rem 0.2rem;
+  color: orangered;
+}
+.bodycontect .Displaygraph .Chartheader .Graphbuttons {
+  width: 100%;
+  display: flex;
+}
+@media only screen and (min-width: 426px) {
+  .bodycontect .Displaygraph .Chartheader .Graphbuttons {
+    justify-content: flex-end;
+  }
+}
+.bodycontect .Displaygraph .Chartheader .Graphbuttons .btn {
+  padding: 1rem 1rem;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.bodycontect .Displaygraph .Chartheader .Graphbuttons .btn:nth-child(2) {
+  margin-left: 1rem;
+}
+.bodycontect .Displaygraph .Chartheader .Graphbuttons .btn:nth-child(3) {
+  margin-left: 1rem;
+}
+@media only screen and (min-width: 426px) {
+  .bodycontect .Displaygraph .Chartheader .Graphbuttons .btn:nth-child(1) {
+    margin-right: 1rem;
+  }
+  .bodycontect .Displaygraph .Chartheader .Graphbuttons .btn:nth-child(2) {
+    margin-right: 1rem;
+  }
+}
+.bodycontect .Displaygraph .Chartheader .Graphbuttons .btn:nth-child(1) {
+  background: orange;
+  opacity: 1;
+}
+.bodycontect .Displaygraph .Chartheader .Graphbuttons .btn:nth-child(2) {
+  background: skyblue;
+  opacity: 1;
+}
+.bodycontect .Displaygraph .Chartheader .Graphbuttons .btn:nth-child(3) {
+  background: rgb(82, 145, 161);
+  opacity: 1;
+}
+.bodycontect .Displaygraph .Chartheader .Graphbuttons .btn:hover {
+  transform: scale(1);
+  transition: all 300ms;
+}
+.bodycontect .Displaygraph .Chartheader .Graphbuttons .btn:hover:nth-child(1) {
+  background: orange;
+  opacity: 1;
+}
+.bodycontect .Displaygraph .Chartheader .Graphbuttons .btn:hover:nth-child(2) {
+  background: skyblue;
+  opacity: 1;
+}
+.bodycontect .Displaygraph .Chartheader .Graphbuttons .btn:hover:nth-child(3) {
+  background: rgb(82, 145, 161);
+  opacity: 1;
+}
+.bodycontect .Displaygraph .Graphcopies {
+  width: 100%;
+  height: 50vh;
+  background: rgb(204, 201, 201);
+  margin: 1rem auto;
+  overflow: hidden;
+  display: grid;
+  border-radius: 3px;
+  place-items: center;
+}
+@media only screen and (min-width: 426px) {
+  .bodycontect .Displaygraph .Graphcopies {
+    height: 60vh;
+    margin: 0.2rem auto;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .bodycontect .Displaygraph .Graphcopies {
+    height: 70vh;
+  }
+}
+.bodycontect .Displaygraph .Graphcopies .Graphs {
+  width: 90%;
+  height: 60vh;
+  max-width: 100%;
+  margin: 0.1rem auto;
+}
+@media only screen and (min-width: 426px) {
+  .bodycontect .Displaygraph .Graphcopies .Graphs {
+    width: 80%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .bodycontect .Displaygraph .Graphcopies .Graphs {
+    width: 90%;
+    height: auto;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: grey;
+  display: grid;
+  place-items: center;
+}
+.footer p {
+  color: white;
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */
