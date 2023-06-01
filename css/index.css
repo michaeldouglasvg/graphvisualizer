@@ -28,6 +28,16 @@ body {
   font-size: 1.2rem;
   margin-left: 0.6rem;
 }
+@media only screen and (min-width: 426px) {
+  .mainheader .logo {
+    margin-left: 2rem;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .mainheader .logo {
+    margin-left: 10rem;
+  }
+}
 .mainheader .navigation {
   display: none;
 }
@@ -37,6 +47,16 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 180px;
+}
+@media only screen and (min-width: 426px) {
+  .mainheader .account {
+    margin-right: 2rem;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .mainheader .account {
+    margin-right: 10rem;
+  }
 }
 .mainheader .account .tag {
   text-decoration: none;

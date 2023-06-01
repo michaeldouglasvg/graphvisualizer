@@ -18,6 +18,7 @@ body{
  display: flex;
  justify-content: space-between;
  align-items: center;
+ 
 
  .logo{
   width: 80px;
@@ -27,6 +28,12 @@ body{
   place-items: center;
   font-size: 1.2rem;
   margin-left: .6rem;
+  @media only screen and (min-width: 426px){
+   margin-left: 2rem;
+  }
+  @media only screen and (min-width: 769px){
+   margin-left: 10rem;
+  }
  }
 
  .navigation{
@@ -39,6 +46,12 @@ body{
   justify-content: space-between;
   align-items: center;
   width: 180px;
+  @media only screen and (min-width: 426px){
+   margin-right: 2rem;
+  }
+  @media only screen and (min-width: 769px){
+   margin-right: 10rem;
+  }
 
   .tag{
    text-decoration: none;
