@@ -1,0 +1,6 @@
+&& Using the api
+Move the project folder to your server{ xamp >> htdocs}
+Open server and create a database. Name it chartvisualization and import dummie data from the db >> chartvisualization.sql
+Open the source code using your IDE, then watch sass and Click Go Live to run the UI.
+
+NOTE: Make sure your server is running...
